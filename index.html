@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Christ Jyoti School | Excellence in Education</title>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8074/8074788.png" type="image/png"/>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -115,11 +116,45 @@
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
-    </style>
+    
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-glow {
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.premium-button {
+    transition: all 0.35s ease;
+}
+
+.premium-button:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 768px) {
+    .mobile-hero-text {
+        font-size: 44px !important;
+        line-height: 1.1 !important;
+    }
+}
+
+</style>
 </head>
 <body class="bg-background text-on-background font-body-md antialiased">
 <!-- TopNavBar -->
-<header class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant shadow-sm">
+<header class="bg-white/70 backdrop-blur-xl sticky top-0 z-50 border-b border-white/20 shadow-xl transition-all duration-500">
 <div class="max-w-[1280px] mx-auto flex justify-between items-center px-margin-desktop py-4">
 <div class="flex items-center gap-4">
 <span class="font-headline-md text-headline-md text-primary tracking-tight italic">Christ Jyoti School</span>
@@ -138,19 +173,19 @@
 </header>
 <main>
 <!-- Hero Section -->
-<section class="relative h-[85vh] overflow-hidden flex items-center">
+<section class="relative min-h-screen overflow-hidden flex items-center">
 <div class="absolute inset-0">
 <img alt="Christ Jyoti School Main Campus Building" class="w-full h-full object-cover scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujKlXYC6nJIvydFFlBZzl6IXAmraG_RaEN1w0l7NHtUMRkrO4Ra2jI2QrhRx0ukuUSCBcEgzJH5CrsJRNW503gZjxvcCGDTK4Rfl6vYYMrOYthBYRPCVqbIlha0IGyd7y9_jW-8u1IdsBdQ3XveUTd0sUOycnVjwheAtURBemcWnUdLoLLaXz3X4NPHuD63HSlcbt1v2eWO-NV72tI6AAus2ZiRBmd5LO6-JdYLGYQnjVx8VYYoPoLM"/>
-<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
 </div>
-<div class="relative max-w-[1280px] mx-auto px-margin-desktop w-full">
+<div class="relative max-w-[1280px] mx-auto px-margin-desktop w-full fade-up">
 <div class="max-w-2xl space-y-6">
 <span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-widest rounded-full">Established for Academic Excellence</span>
-<h1 class="font-headline-xl text-headline-xl text-on-primary">Illuminating paths and nurturing compassionate leaders in the heart of Imphal.</h1>
-<p class="font-body-lg text-body-lg text-on-primary/80 max-w-lg">Dedicated to providing a holistic education that empowers students to achieve their highest potential through integrity, curiosity, and leadership.</p>
+<h1 class="font-headline-xl text-[72px] leading-[1.02] tracking-[-0.04em] text-on-primary drop-shadow-2xl mobile-hero-text">Illuminating paths and nurturing compassionate leaders in the heart of Imphal.</h1>
+<p class="font-body-lg text-[20px] leading-8 text-on-primary/90 max-w-xl">Dedicated to providing a holistic education that empowers students to achieve their highest potential through integrity, curiosity, and leadership.</p>
 <div class="flex gap-4 pt-4">
-<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed transition-colors">Explore Campus</button>
-<button class="border border-white/30 text-white backdrop-blur-md px-8 py-4 rounded-xl font-label-sm text-label-sm uppercase tracking-widest hover:bg-white/10 transition-colors">Virtual Tour</button>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-2xl hero-glow premium-button font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed transition-colors">Explore Campus</button>
+<button class="border border-white/30 text-white backdrop-blur-md px-8 py-4 rounded-2xl premium-button font-label-sm text-label-sm uppercase tracking-widest hover:bg-white/10 transition-colors">Virtual Tour</button>
 </div>
 </div>
 </div>
@@ -274,7 +309,7 @@
 </div>
 </div>
 <div class="space-y-12">
-<h2 class="font-headline-xl text-headline-xl text-on-primary">World-Class Facilities for Future Leaders</h2>
+<h2 class="font-headline-xl text-[72px] leading-[1.02] tracking-[-0.04em] text-on-primary drop-shadow-2xl mobile-hero-text">World-Class Facilities for Future Leaders</h2>
 <div class="grid grid-cols-2 gap-12 border-t border-white/10 pt-12">
 <div class="space-y-2">
 <span class="font-headline-lg text-headline-lg text-secondary-fixed">100%</span>
@@ -314,7 +349,7 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-primary text-on-primary border-t border-primary-container">
+<footer class="bg-[#071426] text-on-primary border-t border-primary-container">
 <div class="max-w-[1280px] mx-auto px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-4 gap-gutter">
 <div class="space-y-6">
 <span class="font-headline-md text-headline-md text-on-primary tracking-tight italic">Christ Jyoti School</span>
