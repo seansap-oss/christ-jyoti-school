@@ -250,6 +250,148 @@
     }
 }
 
+
+/* Final mobile polish */
+@media (max-width: 768px) {
+    header {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 60 !important;
+    }
+
+    header > div {
+        padding: 14px 18px !important;
+        min-height: 86px !important;
+    }
+
+    header span.font-headline-md {
+        font-size: 28px !important;
+        line-height: 0.98 !important;
+        max-width: 170px !important;
+        letter-spacing: -0.04em !important;
+    }
+
+    header button {
+        min-width: 122px !important;
+        padding: 13px 18px !important;
+        font-size: 13px !important;
+        letter-spacing: 0.08em !important;
+        border-radius: 14px !important;
+        box-shadow: 0 10px 24px rgba(0, 20, 60, 0.18) !important;
+    }
+
+    .relative.min-h-screen,
+    section.relative {
+        min-height: auto !important;
+        padding-top: 42px !important;
+        padding-bottom: 48px !important;
+    }
+
+    .fade-up {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .fade-up > div {
+        gap: 16px !important;
+    }
+
+    .fade-up span.inline-block {
+        font-size: 11px !important;
+        line-height: 1.25 !important;
+        letter-spacing: 0.12em !important;
+        padding: 10px 18px !important;
+        border-radius: 999px !important;
+    }
+
+    .mobile-hero-text {
+        font-size: clamp(36px, 10.5vw, 46px) !important;
+        line-height: 1.03 !important;
+        letter-spacing: -0.045em !important;
+        max-width: 96% !important;
+        text-wrap: balance !important;
+    }
+
+    .fade-up p {
+        font-size: 17px !important;
+        line-height: 1.55 !important;
+        max-width: 96% !important;
+        margin-top: 4px !important;
+    }
+
+    .fade-up .flex.gap-4 {
+        margin-top: 14px !important;
+    }
+
+    .fade-up button {
+        width: 100% !important;
+        padding: 15px 18px !important;
+        border-radius: 18px !important;
+    }
+
+    .fade-up button:nth-child(2) {
+        background: rgba(255,255,255,0.10) !important;
+    }
+
+    section.relative .absolute img {
+        object-position: center center !important;
+        transform: scale(1.06) !important;
+    }
+
+    section.relative .absolute .bg-gradient-to-r {
+        background: linear-gradient(90deg, rgba(0,0,0,0.78), rgba(0,0,0,0.46), rgba(0,0,0,0.18)) !important;
+    }
+
+    section.py-24,
+    section.py-32 {
+        padding-top: 56px !important;
+        padding-bottom: 56px !important;
+    }
+
+    section .px-margin-desktop,
+    footer .px-margin-desktop {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    h2.text-headline-xl,
+    h2.font-headline-xl {
+        font-size: 38px !important;
+        line-height: 1.08 !important;
+    }
+
+    h2.text-headline-lg,
+    h2.font-headline-lg {
+        font-size: 34px !important;
+        line-height: 1.12 !important;
+    }
+
+    .bento-card {
+        border-radius: 24px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    header span.font-headline-md {
+        font-size: 25px !important;
+        max-width: 148px !important;
+    }
+
+    header button {
+        min-width: 112px !important;
+        padding: 12px 15px !important;
+        font-size: 12px !important;
+    }
+
+    .mobile-hero-text {
+        font-size: 37px !important;
+    }
+
+    .fade-up p {
+        font-size: 16px !important;
+    }
+}
+
 </style>
 </head>
 <body class="bg-background text-on-background font-body-md antialiased">
