@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Christ Jyoti School | Excellence in Education</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdbcb",
+                        "surface-dim": "#dcd9d9",
+                        "tertiary-fixed-dim": "#ffb691",
+                        "on-primary-fixed": "#001b3d",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#180500",
+                        "surface": "#fbf9f8",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e4e2e1",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#f7e382",
+                        "surface-tint": "#465f88",
+                        "on-tertiary-fixed-variant": "#6c391d",
+                        "surface-container-highest": "#e4e2e1",
+                        "on-secondary-container": "#73640e",
+                        "on-surface-variant": "#44474e",
+                        "primary-container": "#002147",
+                        "on-tertiary-fixed": "#341100",
+                        "on-background": "#1b1c1c",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#aec7f6",
+                        "on-primary-container": "#708ab5",
+                        "tertiary-container": "#3d1500",
+                        "surface-bright": "#fbf9f8",
+                        "secondary-fixed": "#f7e382",
+                        "background": "#fbf9f8",
+                        "on-tertiary-container": "#b97958",
+                        "on-secondary-fixed-variant": "#524700",
+                        "surface-container-high": "#eae8e7",
+                        "error": "#ba1a1a",
+                        "outline": "#74777f",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container": "#f0eded",
+                        "secondary-fixed-dim": "#dac769",
+                        "primary": "#000a1e",
+                        "on-secondary-fixed": "#211b00",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f3f0f0",
+                        "primary-fixed-dim": "#aec7f6",
+                        "inverse-surface": "#303030",
+                        "secondary": "#6c5e06",
+                        "on-surface": "#1b1c1c",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "outline-variant": "#c4c6cf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["EB Garamond"],
+                        "headline-xl-mobile": ["EB Garamond"],
+                        "headline-lg": ["EB Garamond"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["EB Garamond"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["60px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "headline-xl-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .bento-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 40px rgba(0,0,0,0.08);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant shadow-sm">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center px-margin-desktop py-4">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md text-primary tracking-tight italic">Christ Jyoti School</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-primary border-b-2 border-secondary pb-1 font-bold" href="#">Home</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Academics</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Admissions</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Campus Life</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">About Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary-container text-on-primary px-6 py-2.5 rounded-lg font-label-sm text-label-sm uppercase tracking-wider hover:opacity-90 transition-all active:scale-95">Apply Now</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[85vh] overflow-hidden flex items-center">
+<div class="absolute inset-0">
+<img alt="Christ Jyoti School Main Campus Building" class="w-full h-full object-cover scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujKlXYC6nJIvydFFlBZzl6IXAmraG_RaEN1w0l7NHtUMRkrO4Ra2jI2QrhRx0ukuUSCBcEgzJH5CrsJRNW503gZjxvcCGDTK4Rfl6vYYMrOYthBYRPCVqbIlha0IGyd7y9_jW-8u1IdsBdQ3XveUTd0sUOycnVjwheAtURBemcWnUdLoLLaXz3X4NPHuD63HSlcbt1v2eWO-NV72tI6AAus2ZiRBmd5LO6-JdYLGYQnjVx8VYYoPoLM"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
+</div>
+<div class="relative max-w-[1280px] mx-auto px-margin-desktop w-full">
+<div class="max-w-2xl space-y-6">
+<span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-widest rounded-full">Established for Academic Excellence</span>
+<h1 class="font-headline-xl text-headline-xl text-on-primary">Illuminating paths and nurturing compassionate leaders in the heart of Imphal.</h1>
+<p class="font-body-lg text-body-lg text-on-primary/80 max-w-lg">Dedicated to providing a holistic education that empowers students to achieve their highest potential through integrity, curiosity, and leadership.</p>
+<div class="flex gap-4 pt-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed transition-colors">Explore Campus</button>
+<button class="border border-white/30 text-white backdrop-blur-md px-8 py-4 rounded-xl font-label-sm text-label-sm uppercase tracking-widest hover:bg-white/10 transition-colors">Virtual Tour</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: News & Notice Board -->
+<section class="py-24 max-w-[1280px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Section: News -->
+<div class="md:col-span-8 space-y-gutter">
+<div class="bg-surface-container-lowest p-10 rounded-[24px] border border-outline-variant bento-card relative overflow-hidden h-full">
+<div class="relative z-10 flex flex-col h-full">
+<div class="flex justify-between items-start mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Notice Board</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Latest updates and academic schedules</p>
+</div>
+<a class="text-secondary font-label-sm text-label-sm uppercase tracking-widest flex items-center gap-2 group" href="#">
+                                    View All <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="space-y-8">
+<div class="flex gap-6 group cursor-pointer">
+<div class="flex-shrink-0 w-16 h-16 bg-surface-container flex flex-col items-center justify-center rounded-xl">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Apr</span>
+<span class="font-headline-md text-headline-md text-primary -mt-1">01</span>
+</div>
+<div>
+<h4 class="font-body-lg font-semibold text-primary group-hover:text-secondary transition-colors">Winter School Timings Update</h4>
+<p class="font-body-md text-on-surface-variant mt-1">Revised schedule for morning and afternoon sessions starting next week.</p>
+</div>
+</div>
+<div class="flex gap-6 group cursor-pointer border-t border-outline-variant pt-8">
+<div class="flex-shrink-0 w-16 h-16 bg-surface-container flex flex-col items-center justify-center rounded-xl">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Sep</span>
+<span class="font-headline-md text-headline-md text-primary -mt-1">25</span>
+</div>
+<div>
+<h4 class="font-body-lg font-semibold text-primary group-hover:text-secondary transition-colors">Schedule For Interaction</h4>
+<p class="font-body-md text-on-surface-variant mt-1">Interaction dates for new admissions for the 2024-25 academic year.</p>
+</div>
+</div>
+<div class="flex gap-6 group cursor-pointer border-t border-outline-variant pt-8">
+<div class="flex-shrink-0 w-16 h-16 bg-surface-container flex flex-col items-center justify-center rounded-xl">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Oct</span>
+<span class="font-headline-md text-headline-md text-primary -mt-1">12</span>
+</div>
+<div>
+<h4 class="font-body-lg font-semibold text-primary group-hover:text-secondary transition-colors">e-Care Team Support Activation</h4>
+<p class="font-body-md text-on-surface-variant mt-1">New dedicated portal for parent-teacher communication is now live.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Small Sections: Side Bento -->
+<div class="md:col-span-4 grid grid-rows-2 gap-gutter">
+<div class="bg-primary text-on-primary p-8 rounded-[24px] bento-card flex flex-col justify-between">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl" data-icon="school" data-weight="fill">school</span>
+<div class="mt-8">
+<h3 class="font-headline-md text-headline-md leading-tight">Academic Excellence</h3>
+<p class="font-body-md text-on-primary/70 mt-4 italic">"Where learning meets purpose."</p>
+</div>
+</div>
+<div class="relative rounded-[24px] overflow-hidden bento-card">
+<img class="w-full h-full object-cover" data-alt="Close up of a prestigious university diplomas with gold seals on a dark wood table, soft academic library lighting in the background with leather-bound books and warm amber glows. Sophisticated, elite educational atmosphere with high contrast and deep shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeR5fXUBnDzlY8vMrUpQ9ruz_-cl2rqI8Rs_ZeZREYlWSybenDSP7zYSM9w0PpWmWFAEHnDAciQrcJs91uu1zhQsiXH-a7z7kVJ9995nFEh-faAsEJc2SD1MUIiY6orkNo-93d-w92sAAJsVvK52ecOBOyRU9Ik8su9264Eh0gPe3VFwhPenX7I5IOjhElegIDE0f6wN5e5TqgfD_4l0JeV5zZiANkJ-WXJfeDPLiUI4aEDi0qnIp7R6f1qfxLd4A-t0K-h01hGQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+<div>
+<h3 class="font-headline-md text-headline-md text-white">Toppers 2024</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase tracking-widest mt-2">Celebrating our champions</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Pillars -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-margin-desktop text-center mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em] mb-4 inline-block">Our Foundation</span>
+<h2 class="font-headline-xl text-headline-xl text-primary">The Pillars of Christ Jyoti</h2>
+</div>
+<div class="max-w-[1280px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="text-center space-y-6 px-4">
+<div class="w-20 h-20 bg-white shadow-sm border border-outline-variant rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Heritage Excellence</h3>
+<p class="font-body-md text-on-surface-variant">Founded on values that transcend generations, we blend tradition with contemporary pedagogical practices.</p>
+</div>
+<div class="text-center space-y-6 px-4">
+<div class="w-20 h-20 bg-white shadow-sm border border-outline-variant rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="auto_stories">auto_stories</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Academic Rigor</h3>
+<p class="font-body-md text-on-surface-variant">Our curriculum is designed to challenge the intellect, fostering critical thinking and scientific inquiry.</p>
+</div>
+<div class="text-center space-y-6 px-4">
+<div class="w-20 h-20 bg-white shadow-sm border border-outline-variant rounded-full flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Student Development</h3>
+<p class="font-body-md text-on-surface-variant">Beyond books, we focus on emotional intelligence, character building, and physical wellness.</p>
+</div>
+</div>
+</section>
+<!-- Infrastructure & Stats -->
+<section class="py-32 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary-container -z-10"></div>
+<div class="max-w-[1280px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-[32px] overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A grand library with tall floor-to-ceiling wooden bookshelves filled with leather books. Large arched windows let in soft morning sunlight. The floor is dark polished stone. Minimalist modern white study tables are placed in the center, creating a blend of classic architecture and modern minimalism. Deep navy and gold color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxezsG_CWM18zecUK-OE1pPKpOtRm59jHS8CRCqEG6HcziMu23f-N3D0m3s-Bzq1Cnm7tUwpOCn4rB5WwRdwFL9mxt-566yZL_AB0Si5BodfiEr6cXWuHSnTo0E5nrDU0KOv2R2lyWtS1sbhJ_a4Vb9bLnk9hcdyEgoRoxxhULjRXjDBjIi7gtpaulecUOyUC7Nj4Y61qphEZD1BJQ2-Q63dH0eOrIXoJZrJAT9y-NrOKQi8cEQyaM3zM5Lkq_-tQKGqZvK8IlBQ"/>
+</div>
+<div class="absolute -bottom-10 -right-10 bg-secondary-container p-12 rounded-[24px] shadow-xl hidden md:block">
+<div class="space-y-2">
+<p class="font-label-sm text-label-sm text-on-secondary-container uppercase tracking-widest">Global Ranking</p>
+<p class="font-headline-xl text-headline-xl text-on-secondary-container">#01</p>
+<p class="font-body-md text-on-secondary-container/80">In Regional Education</p>
+</div>
+</div>
+</div>
+<div class="space-y-12">
+<h2 class="font-headline-xl text-headline-xl text-on-primary">World-Class Facilities for Future Leaders</h2>
+<div class="grid grid-cols-2 gap-12 border-t border-white/10 pt-12">
+<div class="space-y-2">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed">100%</span>
+<p class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-widest">Board Pass Rate</p>
+</div>
+<div class="space-y-2">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed">15:1</span>
+<p class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-widest">Student Ratio</p>
+</div>
+<div class="space-y-2">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed">25+</span>
+<p class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-widest">Clubs &amp; Societies</p>
+</div>
+<div class="space-y-2">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed">10k+</span>
+<p class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-widest">Library Titles</p>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-primary/70">From state-of-the-art computer labs to international-standard sports arenas, we provide an environment where potential knows no bounds.</p>
+</div>
+</div>
+</section>
+<!-- Admissions CTA -->
+<section class="py-24">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="bg-surface-container-high rounded-[40px] p-16 md:p-24 flex flex-col md:flex-row justify-between items-center gap-12 border border-outline-variant">
+<div class="max-w-xl text-center md:text-left">
+<h2 class="font-headline-xl text-headline-xl text-primary">Join our legacy of excellence.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-6">Admissions for the 2024-2025 academic session are now open. Begin your journey toward a brighter future today.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-6 w-full md:w-auto">
+<button class="bg-primary-container text-on-primary px-12 py-5 rounded-2xl font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary transition-all shadow-lg active:scale-95">Apply Now</button>
+<button class="bg-white border border-outline text-primary px-12 py-5 rounded-2xl font-label-sm text-label-sm uppercase tracking-widest hover:bg-surface-variant transition-all active:scale-95">Download Prospectus</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary border-t border-primary-container">
+<div class="max-w-[1280px] mx-auto px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="space-y-6">
+<span class="font-headline-md text-headline-md text-on-primary tracking-tight italic">Christ Jyoti School</span>
+<p class="font-body-md text-on-primary/70 leading-relaxed">Kontha Khabam, Imphal East. Dedicated to academic excellence and character formation since our foundation.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="facebook">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="video_library">video_library</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-primary/70 hover:text-on-primary transition-colors" href="#">Home</a></li>
+<li><a class="font-body-md text-on-primary/70 hover:text-on-primary transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-on-primary/70 hover:text-on-primary transition-colors" href="#">Academics</a></li>
+<li><a class="font-body-md text-on-primary/70 hover:text-on-primary transition-colors" href="#">Admissions Portal</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Resources</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-primary/70 hover:text-on-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-on-primary/70 hover:text-on-primary transition-colors" href="#">Alumni Association</a></li>
+<li><a class="font-body-md text-on-primary/70 hover:text-on-primary transition-colors" href="#">Career Opportunities</a></li>
+<li><a class="font-body-md text-on-primary/70 hover:text-on-primary transition-colors" href="#">Contact Support</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Contact Info</h4>
+<ul class="space-y-4 font-body-md text-on-primary/70">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="location_on">location_on</span>
+<span>Kontha Khabam, Imphal East,<br/>Manipur - 795002</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="mail">mail</span>
+<span>info@christjyotischool.edu.in</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="call">call</span>
+<span>+91 123 456 7890</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-primary-container max-w-[1280px] mx-auto px-margin-desktop py-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-on-primary/50">© 2024 Christ Jyoti School, Kontha Khabam. Established for Academic Excellence.</p>
+<div class="flex gap-8">
+<a class="font-label-sm text-label-sm text-on-primary/50 hover:text-on-primary transition-colors" href="#">Terms of Use</a>
+<a class="font-label-sm text-label-sm text-on-primary/50 hover:text-on-primary transition-colors" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth reveal animations on scroll
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.bento-card');
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveals[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('opacity-100');
+                    reveals[i].classList.remove('opacity-0');
+                    reveals[i].style.transform = 'translateY(0)';
+                }
+            }
+        };
+
+        window.addEventListener('scroll', reveal);
+        // Initial check
+        reveal();
+    </script>
+</body></html>
