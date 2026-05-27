@@ -150,6 +150,106 @@
     }
 }
 
+
+/* Mobile browser fit fix */
+@media (max-width: 768px) {
+    header > div {
+        padding: 18px 22px !important;
+        gap: 14px !important;
+    }
+
+    header span.font-headline-md {
+        font-size: 30px !important;
+        line-height: 1.05 !important;
+        max-width: 190px !important;
+        display: block !important;
+    }
+
+    header button {
+        padding: 13px 20px !important;
+        font-size: 14px !important;
+        line-height: 1.15 !important;
+        border-radius: 12px !important;
+        min-width: 112px !important;
+    }
+
+    .relative.min-h-screen,
+    section.relative {
+        min-height: calc(100vh - 128px) !important;
+        align-items: flex-start !important;
+        padding-top: 32px !important;
+        padding-bottom: 56px !important;
+    }
+
+    section.relative .absolute img {
+        object-position: center top !important;
+    }
+
+    .fade-up {
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+    }
+
+    .fade-up > div {
+        max-width: 100% !important;
+        gap: 18px !important;
+    }
+
+    .fade-up span.inline-block {
+        font-size: 12px !important;
+        line-height: 1.25 !important;
+        letter-spacing: 0.12em !important;
+        padding: 10px 18px !important;
+        max-width: 100% !important;
+    }
+
+    .mobile-hero-text {
+        font-size: clamp(42px, 13vw, 56px) !important;
+        line-height: 0.98 !important;
+        letter-spacing: -0.055em !important;
+        max-width: 100% !important;
+        word-break: normal !important;
+    }
+
+    .fade-up p {
+        font-size: 18px !important;
+        line-height: 1.55 !important;
+        max-width: 100% !important;
+    }
+
+    .fade-up .flex.gap-4 {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+    .fade-up button {
+        width: 100% !important;
+        padding: 15px 18px !important;
+        font-size: 13px !important;
+    }
+
+    nav {
+        display: none !important;
+    }
+}
+
+@media (max-width: 390px) {
+    header span.font-headline-md {
+        font-size: 27px !important;
+        max-width: 165px !important;
+    }
+
+    header button {
+        min-width: 104px !important;
+        padding: 12px 17px !important;
+    }
+
+    .mobile-hero-text {
+        font-size: 43px !important;
+    }
+}
+
 </style>
 </head>
 <body class="bg-background text-on-background font-body-md antialiased">
